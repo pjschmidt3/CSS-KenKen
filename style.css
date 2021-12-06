@@ -1,0 +1,90 @@
+:root {
+    --outer-border: 4px solid #000;
+    --inner-border: 1px solid #2e2e2e;
+    --outer-shadow-color: rgba(0, 0, 0, 0.8);
+    --inner-shadow-color: rgba(0, 0, 0, 0.5);
+    --outer-shadow: 1px 1px 5px 1px var(--outer-shadow-color);
+
+}
+
+body {
+    background-color: #fff;
+}
+
+.grid {
+    width: 500px;
+    height: 500px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    justify-content: space-evenly;
+    border: var(--outer-border);
+    box-shadow: 1px 1px 1px var(--outer-shadow-color);
+}
+
+.grid, .grid-items {
+    border-collapse: collapse;
+}
+
+.grid-items {
+    position: relative;
+    border: var(--inner-border);
+    box-shadow: 1px 1px 1px var(--inner-shadow-color);
+}
+
+.prompt {
+    position: absolute;
+    top: 3px;
+    left: 3px;
+}
+
+#box1, #box2 {
+    border-bottom: var(--outer-border);
+}
+
+#box2 {
+    border-right: var(--outer-border);
+}
+
+#box3, #box4 {
+    border-bottom: var(--outer-border);
+}
+
+#box4 {
+    border-right: var(--outer-border);
+}
+
+#box5, #box8 {
+    border-bottom: var(--outer-border);
+}
+
+#box6 {
+    border-right: var(--outer-border);
+}
+
+#box9 {
+    border-right: var(--outer-border);
+    border-bottom: var(--outer-border);
+}
+
+#box10 {
+    border-right: var(--outer-border);
+}
+
+#box10, #box11 {
+    border-bottom: var(--outer-border);
+}
+
+#box11 {
+    border-right: var(--outer-border);
+}
+
+#box14 {
+    border-right: var(--outer-border);
+}
